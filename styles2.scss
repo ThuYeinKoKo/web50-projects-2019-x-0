@@ -1,0 +1,41 @@
+$color: gray;
+
+%message {
+	font-family: sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	border: 2px solid black;
+	padding: 20px;
+	margin: 20px;
+}
+
+div {
+	font-size: 18px;
+
+	p {
+		color: blue;
+	}
+
+	ul {
+		color: green;
+	}
+}
+
+h1 {
+	color: $color;
+}
+
+p::selection {
+	background-color: $color;
+}
+
+.first {
+	@extend %message;
+	background-color: green;
+}
+
+.second {
+	@extend %message;
+	background-color: orange;
+}
+

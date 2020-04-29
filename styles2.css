@@ -1,0 +1,36 @@
+.second, .first {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid black;
+  padding: 20px;
+  margin: 20px;
+}
+
+div {
+  font-size: 18px;
+}
+div p {
+  color: blue;
+}
+div ul {
+  color: green;
+}
+
+h1 {
+  color: gray;
+}
+
+p::selection {
+  background-color: gray;
+}
+
+.first {
+  background-color: green;
+}
+
+.second {
+  background-color: orange;
+}
+
+/*# sourceMappingURL=styles2.css.map */

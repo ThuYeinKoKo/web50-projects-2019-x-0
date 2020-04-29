@@ -1,0 +1,58 @@
+h1 {
+	font-family: Arial,sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+	color: gray;
+	text-align: center;
+}
+
+@media (min-width: 500px) {
+	h1::before {
+		content: "Welcome To My ";
+	}
+}
+
+@media (max-width: 499px) {
+	h1::before {
+		content: "Welcome From ";
+	}
+}
+
+li > a::before {
+	content: "\21d2";
+	font-weight: bold;
+}
+
+a:hover{
+	text-decoration-color: gray;
+}
+
+table {
+	border: 2px solid black;
+	border-collapse: collapse;
+	width: 50%;
+}
+
+.row {
+	margin: 20px;
+}
+
+.row > div {
+	padding: 20px;
+}
+
+th, td {
+	border: 1px solid black;
+	padding: 5px;
+	text-align: center;
+}
+
+th {
+	text-align: center;
+	background-color: lightgray;
+}
+
+p::selection {
+	color: red;
+	background-color: gray;
+}
